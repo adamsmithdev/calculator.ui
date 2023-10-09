@@ -1,0 +1,66 @@
+body {
+    font-family: Lato, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    color: #fff;
+    background-color: #121212;
+    height: 2rem;
+    width: 19rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+.gridItem {
+    padding: 1rem;
+    color: #fff;
+    background-color: #121212;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.gridItem:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.gridItem:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
